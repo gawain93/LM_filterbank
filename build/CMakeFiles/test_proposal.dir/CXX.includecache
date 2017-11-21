@@ -6,6 +6,16 @@
 
 #IncludeRegexTransform: 
 
+../include/compute_histogram.h
+iostream
+-
+math.h
+-
+boost/concept_check.hpp
+-
+opencv2/core/core.hpp
+-
+
 ../include/filter_bank.h
 iostream
 -
@@ -24,9 +34,17 @@ opencv2/core.hpp
 opencv2/imgproc.hpp
 -
 
-/home/rmb-jx/projects/test_proposal/src/filter_bank.cpp
+/home/rmb-jx/projects/test_proposal/main.cpp
 filter_bank.h
 -
+time.h
+-
+compute_histogram.h
+-
+
+/home/rmb-jx/projects/test_proposal/src/compute_histogram.cpp
+compute_histogram.h
+/home/rmb-jx/projects/test_proposal/src/compute_histogram.h
 
 /usr/local/include/opencv2/core.hpp
 opencv2/core/core.hpp

@@ -5,6 +5,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
   "/home/rmb-jx/projects/test_proposal/main.cpp" "/home/rmb-jx/projects/test_proposal/build/CMakeFiles/test_proposal.dir/main.cpp.o"
+  "/home/rmb-jx/projects/test_proposal/src/compute_histogram.cpp" "/home/rmb-jx/projects/test_proposal/build/CMakeFiles/test_proposal.dir/src/compute_histogram.cpp.o"
   "/home/rmb-jx/projects/test_proposal/src/filter_bank.cpp" "/home/rmb-jx/projects/test_proposal/build/CMakeFiles/test_proposal.dir/src/filter_bank.cpp.o"
   "/home/rmb-jx/projects/test_proposal/src/texture_recog.cpp" "/home/rmb-jx/projects/test_proposal/build/CMakeFiles/test_proposal.dir/src/texture_recog.cpp.o"
   )

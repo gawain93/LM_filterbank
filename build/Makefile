@@ -176,6 +176,30 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/test_proposal.dir/build.make CMakeFiles/test_proposal.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/compute_histogram.o: src/compute_histogram.cpp.o
+.PHONY : src/compute_histogram.o
+
+# target to build an object file
+src/compute_histogram.cpp.o:
+	$(MAKE) -f CMakeFiles/test_proposal.dir/build.make CMakeFiles/test_proposal.dir/src/compute_histogram.cpp.o
+.PHONY : src/compute_histogram.cpp.o
+
+src/compute_histogram.i: src/compute_histogram.cpp.i
+.PHONY : src/compute_histogram.i
+
+# target to preprocess a source file
+src/compute_histogram.cpp.i:
+	$(MAKE) -f CMakeFiles/test_proposal.dir/build.make CMakeFiles/test_proposal.dir/src/compute_histogram.cpp.i
+.PHONY : src/compute_histogram.cpp.i
+
+src/compute_histogram.s: src/compute_histogram.cpp.s
+.PHONY : src/compute_histogram.s
+
+# target to generate assembly for a file
+src/compute_histogram.cpp.s:
+	$(MAKE) -f CMakeFiles/test_proposal.dir/build.make CMakeFiles/test_proposal.dir/src/compute_histogram.cpp.s
+.PHONY : src/compute_histogram.cpp.s
+
 src/filter_bank.o: src/filter_bank.cpp.o
 .PHONY : src/filter_bank.o
 
@@ -240,6 +264,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/compute_histogram.o"
+	@echo "... src/compute_histogram.i"
+	@echo "... src/compute_histogram.s"
 	@echo "... src/filter_bank.o"
 	@echo "... src/filter_bank.i"
 	@echo "... src/filter_bank.s"
