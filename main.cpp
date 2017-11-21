@@ -1,20 +1,19 @@
 #include <filter_bank.h>
 #include <time.h>
 
+#include <compute_histogram.h>
+
 using namespace FeatureExtract;
 
 int main(int argc, char **argv) 
 {  
+  /*
    std::string filename("./triangle.png");
    cv::Mat image = cv::imread(filename.c_str(), CV_LOAD_IMAGE_COLOR);
    cv::Mat image_gray, image_f, response;
    cv::cvtColor(image, image_gray, CV_BGR2GRAY);
    image_gray.convertTo(image_f, CV_32F, 1.0/255);    // TODO should the image be normalised?
-   /*
-   cv::imshow("image_gray", image_gray);
-   cv::waitKey(0);
-   cv::destroyAllWindows();
-   */
+
    //cv::copyMakeBorder(image_gray, image_gray, 60, 60, 30, 30, cv::BORDER_CONSTANT, 255.);
    //image_gray = 255 - image_gray;                                       
    
@@ -46,7 +45,21 @@ int main(int argc, char **argv)
    cv::imshow("response", response);
    cv::waitKey(0);
    cv::destroyAllWindows();
-   
-   
-   return 1;
+   */
+  int scales = 1;
+  int orients  =1;
+  int radis = 80;        // initialize values
+  
+  ComputeHistogram ch(radis, orients, scales);
+  //ch.computeMask(radis);
+  //std::cout << ch.angle_mask_.rows;
+  //cv::imshow("mask", ch.angle_mask_);
+  //cv::waitKey(0);
+  //cv::destroyAllWindows();
+  ch.rotateMask();          
+  cv::imshow("mask", ch.right_mask_*255);
+  cv::waitKey(0);
+  cv::destroyAllWindows();
+  
+  return 1;
 }
