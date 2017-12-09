@@ -141,12 +141,60 @@ CMakeFiles/test_proposal.dir/src/compute_histogram.cpp.o.provides: CMakeFiles/te
 
 CMakeFiles/test_proposal.dir/src/compute_histogram.cpp.o.provides.build: CMakeFiles/test_proposal.dir/src/compute_histogram.cpp.o
 
+CMakeFiles/test_proposal.dir/src/image_blend.cpp.o: CMakeFiles/test_proposal.dir/flags.make
+CMakeFiles/test_proposal.dir/src/image_blend.cpp.o: ../src/image_blend.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rmb-jx/projects/test_proposal/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/test_proposal.dir/src/image_blend.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/test_proposal.dir/src/image_blend.cpp.o -c /home/rmb-jx/projects/test_proposal/src/image_blend.cpp
+
+CMakeFiles/test_proposal.dir/src/image_blend.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_proposal.dir/src/image_blend.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/rmb-jx/projects/test_proposal/src/image_blend.cpp > CMakeFiles/test_proposal.dir/src/image_blend.cpp.i
+
+CMakeFiles/test_proposal.dir/src/image_blend.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_proposal.dir/src/image_blend.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/rmb-jx/projects/test_proposal/src/image_blend.cpp -o CMakeFiles/test_proposal.dir/src/image_blend.cpp.s
+
+CMakeFiles/test_proposal.dir/src/image_blend.cpp.o.requires:
+.PHONY : CMakeFiles/test_proposal.dir/src/image_blend.cpp.o.requires
+
+CMakeFiles/test_proposal.dir/src/image_blend.cpp.o.provides: CMakeFiles/test_proposal.dir/src/image_blend.cpp.o.requires
+	$(MAKE) -f CMakeFiles/test_proposal.dir/build.make CMakeFiles/test_proposal.dir/src/image_blend.cpp.o.provides.build
+.PHONY : CMakeFiles/test_proposal.dir/src/image_blend.cpp.o.provides
+
+CMakeFiles/test_proposal.dir/src/image_blend.cpp.o.provides.build: CMakeFiles/test_proposal.dir/src/image_blend.cpp.o
+
+CMakeFiles/test_proposal.dir/src/segment_dirt.cpp.o: CMakeFiles/test_proposal.dir/flags.make
+CMakeFiles/test_proposal.dir/src/segment_dirt.cpp.o: ../src/segment_dirt.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rmb-jx/projects/test_proposal/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/test_proposal.dir/src/segment_dirt.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/test_proposal.dir/src/segment_dirt.cpp.o -c /home/rmb-jx/projects/test_proposal/src/segment_dirt.cpp
+
+CMakeFiles/test_proposal.dir/src/segment_dirt.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_proposal.dir/src/segment_dirt.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/rmb-jx/projects/test_proposal/src/segment_dirt.cpp > CMakeFiles/test_proposal.dir/src/segment_dirt.cpp.i
+
+CMakeFiles/test_proposal.dir/src/segment_dirt.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_proposal.dir/src/segment_dirt.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/rmb-jx/projects/test_proposal/src/segment_dirt.cpp -o CMakeFiles/test_proposal.dir/src/segment_dirt.cpp.s
+
+CMakeFiles/test_proposal.dir/src/segment_dirt.cpp.o.requires:
+.PHONY : CMakeFiles/test_proposal.dir/src/segment_dirt.cpp.o.requires
+
+CMakeFiles/test_proposal.dir/src/segment_dirt.cpp.o.provides: CMakeFiles/test_proposal.dir/src/segment_dirt.cpp.o.requires
+	$(MAKE) -f CMakeFiles/test_proposal.dir/build.make CMakeFiles/test_proposal.dir/src/segment_dirt.cpp.o.provides.build
+.PHONY : CMakeFiles/test_proposal.dir/src/segment_dirt.cpp.o.provides
+
+CMakeFiles/test_proposal.dir/src/segment_dirt.cpp.o.provides.build: CMakeFiles/test_proposal.dir/src/segment_dirt.cpp.o
+
 # Object files for target test_proposal
 test_proposal_OBJECTS = \
 "CMakeFiles/test_proposal.dir/main.cpp.o" \
 "CMakeFiles/test_proposal.dir/src/filter_bank.cpp.o" \
 "CMakeFiles/test_proposal.dir/src/texture_recog.cpp.o" \
-"CMakeFiles/test_proposal.dir/src/compute_histogram.cpp.o"
+"CMakeFiles/test_proposal.dir/src/compute_histogram.cpp.o" \
+"CMakeFiles/test_proposal.dir/src/image_blend.cpp.o" \
+"CMakeFiles/test_proposal.dir/src/segment_dirt.cpp.o"
 
 # External object files for target test_proposal
 test_proposal_EXTERNAL_OBJECTS =
@@ -155,6 +203,8 @@ test_proposal: CMakeFiles/test_proposal.dir/main.cpp.o
 test_proposal: CMakeFiles/test_proposal.dir/src/filter_bank.cpp.o
 test_proposal: CMakeFiles/test_proposal.dir/src/texture_recog.cpp.o
 test_proposal: CMakeFiles/test_proposal.dir/src/compute_histogram.cpp.o
+test_proposal: CMakeFiles/test_proposal.dir/src/image_blend.cpp.o
+test_proposal: CMakeFiles/test_proposal.dir/src/segment_dirt.cpp.o
 test_proposal: CMakeFiles/test_proposal.dir/build.make
 test_proposal: /usr/local/lib/libopencv_core.a
 test_proposal: /usr/local/lib/libopencv_flann.a
@@ -175,6 +225,8 @@ test_proposal: /usr/local/lib/libopencv_superres.a
 test_proposal: /usr/local/lib/libopencv_nonfree.a
 test_proposal: /usr/local/lib/libopencv_stitching.a
 test_proposal: /usr/local/lib/libopencv_contrib.a
+test_proposal: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+test_proposal: /usr/lib/x86_64-linux-gnu/libboost_system.so
 test_proposal: /usr/local/lib/libopencv_nonfree.a
 test_proposal: /usr/local/lib/libopencv_gpu.a
 test_proposal: /usr/local/lib/libopencv_legacy.a
@@ -229,6 +281,8 @@ CMakeFiles/test_proposal.dir/requires: CMakeFiles/test_proposal.dir/main.cpp.o.r
 CMakeFiles/test_proposal.dir/requires: CMakeFiles/test_proposal.dir/src/filter_bank.cpp.o.requires
 CMakeFiles/test_proposal.dir/requires: CMakeFiles/test_proposal.dir/src/texture_recog.cpp.o.requires
 CMakeFiles/test_proposal.dir/requires: CMakeFiles/test_proposal.dir/src/compute_histogram.cpp.o.requires
+CMakeFiles/test_proposal.dir/requires: CMakeFiles/test_proposal.dir/src/image_blend.cpp.o.requires
+CMakeFiles/test_proposal.dir/requires: CMakeFiles/test_proposal.dir/src/segment_dirt.cpp.o.requires
 .PHONY : CMakeFiles/test_proposal.dir/requires
 
 CMakeFiles/test_proposal.dir/clean:

@@ -224,6 +224,54 @@ src/filter_bank.cpp.s:
 	$(MAKE) -f CMakeFiles/test_proposal.dir/build.make CMakeFiles/test_proposal.dir/src/filter_bank.cpp.s
 .PHONY : src/filter_bank.cpp.s
 
+src/image_blend.o: src/image_blend.cpp.o
+.PHONY : src/image_blend.o
+
+# target to build an object file
+src/image_blend.cpp.o:
+	$(MAKE) -f CMakeFiles/test_proposal.dir/build.make CMakeFiles/test_proposal.dir/src/image_blend.cpp.o
+.PHONY : src/image_blend.cpp.o
+
+src/image_blend.i: src/image_blend.cpp.i
+.PHONY : src/image_blend.i
+
+# target to preprocess a source file
+src/image_blend.cpp.i:
+	$(MAKE) -f CMakeFiles/test_proposal.dir/build.make CMakeFiles/test_proposal.dir/src/image_blend.cpp.i
+.PHONY : src/image_blend.cpp.i
+
+src/image_blend.s: src/image_blend.cpp.s
+.PHONY : src/image_blend.s
+
+# target to generate assembly for a file
+src/image_blend.cpp.s:
+	$(MAKE) -f CMakeFiles/test_proposal.dir/build.make CMakeFiles/test_proposal.dir/src/image_blend.cpp.s
+.PHONY : src/image_blend.cpp.s
+
+src/segment_dirt.o: src/segment_dirt.cpp.o
+.PHONY : src/segment_dirt.o
+
+# target to build an object file
+src/segment_dirt.cpp.o:
+	$(MAKE) -f CMakeFiles/test_proposal.dir/build.make CMakeFiles/test_proposal.dir/src/segment_dirt.cpp.o
+.PHONY : src/segment_dirt.cpp.o
+
+src/segment_dirt.i: src/segment_dirt.cpp.i
+.PHONY : src/segment_dirt.i
+
+# target to preprocess a source file
+src/segment_dirt.cpp.i:
+	$(MAKE) -f CMakeFiles/test_proposal.dir/build.make CMakeFiles/test_proposal.dir/src/segment_dirt.cpp.i
+.PHONY : src/segment_dirt.cpp.i
+
+src/segment_dirt.s: src/segment_dirt.cpp.s
+.PHONY : src/segment_dirt.s
+
+# target to generate assembly for a file
+src/segment_dirt.cpp.s:
+	$(MAKE) -f CMakeFiles/test_proposal.dir/build.make CMakeFiles/test_proposal.dir/src/segment_dirt.cpp.s
+.PHONY : src/segment_dirt.cpp.s
+
 src/texture_recog.o: src/texture_recog.cpp.o
 .PHONY : src/texture_recog.o
 
@@ -270,6 +318,12 @@ help:
 	@echo "... src/filter_bank.o"
 	@echo "... src/filter_bank.i"
 	@echo "... src/filter_bank.s"
+	@echo "... src/image_blend.o"
+	@echo "... src/image_blend.i"
+	@echo "... src/image_blend.s"
+	@echo "... src/segment_dirt.o"
+	@echo "... src/segment_dirt.i"
+	@echo "... src/segment_dirt.s"
 	@echo "... src/texture_recog.o"
 	@echo "... src/texture_recog.i"
 	@echo "... src/texture_recog.s"

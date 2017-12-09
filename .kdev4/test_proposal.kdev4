@@ -34,3 +34,6 @@ Project Target=test_proposal,test_proposal
 Use External Terminal=false
 Working Directory=
 isExecutable=false
+
+[Project]
+VersionControlSupport=kdevgit

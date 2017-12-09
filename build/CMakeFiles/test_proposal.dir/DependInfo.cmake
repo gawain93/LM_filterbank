@@ -7,6 +7,8 @@ SET(CMAKE_DEPENDS_CHECK_CXX
   "/home/rmb-jx/projects/test_proposal/main.cpp" "/home/rmb-jx/projects/test_proposal/build/CMakeFiles/test_proposal.dir/main.cpp.o"
   "/home/rmb-jx/projects/test_proposal/src/compute_histogram.cpp" "/home/rmb-jx/projects/test_proposal/build/CMakeFiles/test_proposal.dir/src/compute_histogram.cpp.o"
   "/home/rmb-jx/projects/test_proposal/src/filter_bank.cpp" "/home/rmb-jx/projects/test_proposal/build/CMakeFiles/test_proposal.dir/src/filter_bank.cpp.o"
+  "/home/rmb-jx/projects/test_proposal/src/image_blend.cpp" "/home/rmb-jx/projects/test_proposal/build/CMakeFiles/test_proposal.dir/src/image_blend.cpp.o"
+  "/home/rmb-jx/projects/test_proposal/src/segment_dirt.cpp" "/home/rmb-jx/projects/test_proposal/build/CMakeFiles/test_proposal.dir/src/segment_dirt.cpp.o"
   "/home/rmb-jx/projects/test_proposal/src/texture_recog.cpp" "/home/rmb-jx/projects/test_proposal/build/CMakeFiles/test_proposal.dir/src/texture_recog.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")

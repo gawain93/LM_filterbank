@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/rmb-jx/projects/test_proposal/build
 CMakeFiles/test_proposal.dir/all:
 	$(MAKE) -f CMakeFiles/test_proposal.dir/build.make CMakeFiles/test_proposal.dir/depend
 	$(MAKE) -f CMakeFiles/test_proposal.dir/build.make CMakeFiles/test_proposal.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rmb-jx/projects/test_proposal/build/CMakeFiles  1 2 3 4
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rmb-jx/projects/test_proposal/build/CMakeFiles  1 2 3 4 5 6
 	@echo "Built target test_proposal"
 .PHONY : CMakeFiles/test_proposal.dir/all
 
@@ -69,7 +69,7 @@ all: CMakeFiles/test_proposal.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_proposal.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rmb-jx/projects/test_proposal/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rmb-jx/projects/test_proposal/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_proposal.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rmb-jx/projects/test_proposal/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_proposal.dir/rule

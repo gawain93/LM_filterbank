@@ -6,49 +6,27 @@
 
 #IncludeRegexTransform: 
 
-../include/compute_histogram.h
+../include/segment_dirt.h
 iostream
 -
-math.h
--
-boost/concept_check.hpp
+string.h
 -
 opencv2/core/core.hpp
 -
-
-../include/filter_bank.h
-iostream
+opencv2/highgui/highgui.hpp
 -
-math.h
+opencv2/imgproc/imgproc.hpp
 -
-string
+boost/filesystem.hpp
 -
-sstream
+boost/range/iterator_range.hpp
 -
-boost/concept_check.hpp
--
-opencv2/highgui.hpp
--
-opencv2/core.hpp
--
-opencv2/imgproc.hpp
+valarray
 -
 
-/home/rmb-jx/projects/test_proposal/main.cpp
-filter_bank.h
--
-time.h
--
-compute_histogram.h
--
-
-/home/rmb-jx/projects/test_proposal/src/compute_histogram.cpp
-compute_histogram.h
-/home/rmb-jx/projects/test_proposal/src/compute_histogram.h
-
-/usr/local/include/opencv2/core.hpp
-opencv2/core/core.hpp
-/usr/local/include/opencv2/opencv2/core/core.hpp
+/home/rmb-jx/projects/test_proposal/src/segment_dirt.cpp
+segment_dirt.h
+/home/rmb-jx/projects/test_proposal/src/segment_dirt.h
 
 /usr/local/include/opencv2/core/core.hpp
 opencv2/core/types_c.h
@@ -132,10 +110,6 @@ emmintrin.h
 
 /usr/local/include/opencv2/core/version.hpp
 
-/usr/local/include/opencv2/highgui.hpp
-opencv2/highgui/highgui.hpp
-/usr/local/include/opencv2/opencv2/highgui/highgui.hpp
-
 /usr/local/include/opencv2/highgui/highgui.hpp
 opencv2/core/core.hpp
 /usr/local/include/opencv2/highgui/opencv2/core/core.hpp
@@ -145,10 +119,6 @@ opencv2/highgui/highgui_c.h
 /usr/local/include/opencv2/highgui/highgui_c.h
 opencv2/core/core_c.h
 /usr/local/include/opencv2/highgui/opencv2/core/core_c.h
-
-/usr/local/include/opencv2/imgproc.hpp
-opencv2/imgproc/imgproc.hpp
-/usr/local/include/opencv2/opencv2/imgproc/imgproc.hpp
 
 /usr/local/include/opencv2/imgproc/imgproc.hpp
 opencv2/core/core.hpp

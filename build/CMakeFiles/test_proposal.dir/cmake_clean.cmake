@@ -3,6 +3,8 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/test_proposal.dir/src/filter_bank.cpp.o"
   "CMakeFiles/test_proposal.dir/src/texture_recog.cpp.o"
   "CMakeFiles/test_proposal.dir/src/compute_histogram.cpp.o"
+  "CMakeFiles/test_proposal.dir/src/image_blend.cpp.o"
+  "CMakeFiles/test_proposal.dir/src/segment_dirt.cpp.o"
   "test_proposal.pdb"
   "test_proposal"
 )
