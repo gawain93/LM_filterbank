@@ -6,10 +6,20 @@
 
 #IncludeRegexTransform: 
 
-../include/segment_dirt.h
+../include/image_blend.h
 iostream
 -
-string.h
+string
+-
+cstdlib
+-
+ctime
+-
+dirent.h
+-
+math.h
+-
+vector
 -
 opencv2/core/core.hpp
 -
@@ -21,12 +31,12 @@ boost/filesystem.hpp
 -
 boost/range/iterator_range.hpp
 -
-valarray
+boost/lambda/bind.hpp
 -
 
-/home/rmb-jx/projects/test_proposal/src/segment_dirt.cpp
-segment_dirt.h
-/home/rmb-jx/projects/test_proposal/src/segment_dirt.h
+/home/rmb-jx/projects/test_proposal/src/image_blend.cpp
+image_blend.h
+/home/rmb-jx/projects/test_proposal/src/image_blend.h
 
 /usr/local/include/opencv2/core/core.hpp
 opencv2/core/types_c.h

@@ -152,10 +152,33 @@ int main(int argc, char **argv)
   ib.run();
   */
   
-  std::string path = "./pictures";
-  SegmentDirt sd(path, path, path);
+  //SegmentDirt sd(path, path, path);
   
-  sd.run();
+  std::string clean_ground_path = "./pictures/ground";
+  std::string artificial_dirt_path = "./pictures/image";
+  std::string artificial_dirt_mask_path = "./pictures/mask";
+  
+  std::string dirt_image_path = "./pictures/dirts" ;
+  std::string cropped_image_path =  "./pictures/image"; 
+  std::string cropped_mask_path = "./pictures/mask";
+  //SegmentDirt sd(dirt_image_path, cropped_image_path, 
+  //	         cropped_mask_path);
+  //sd.run();
+  
+  ImageBlend ib(clean_ground_path, artificial_dirt_path, artificial_dirt_mask_path);
+  ib.run();
+  
+  //std::vector<std::string> stringVec; 
+  //stringVec.push_back("./pictures/mask/dirt2_cropped.jpg");
+  //stringVec.push_back("./pictures/mask/dirt1_cropped.jpg");
+  //stringVec.push_back("./pictures/mask/dirt3_cropped.jpg");
+  //stringVec.push_back("./pictures/mask/dirt4_cropped.jpg");
+  //stringVec.push_back("./pictures/mask/dirt5_cropped.jpg");
+  //std::sort(stringVec.begin(), stringVec.end());
+ 
+  //for (int i = 0; i < 5; i++)
+       //std::cout << stringVec[i] << std::endl;;
+
   
   return 1;
 }

@@ -32,6 +32,26 @@ void SegmentDirt::run()
     
     dirt_frame_ = cv::imread(path, CV_LOAD_IMAGE_COLOR);
     segment();
+    crop();
+    
+    std::vector<std::string> strs;              // split the image name from the data path
+    std::string file_name;
+    boost::split(strs, path, boost::is_any_of("\t,/"));
+    for (vector<string>::iterator it = strs.begin(); it != strs.end(); it++)
+    {
+      std::cout << *it << std::endl;
+      file_name = *(it);
+    }
+    strs.clear();
+    boost::split(strs, file_name, boost::is_any_of("\t,."));
+    std::cout << "image name is: " << strs[0] << std::endl;
+    
+    std::string dirt_path = cropped_image_path_ + '/' + strs[0] + "_cropped.jpg"; 
+    std::string mask_path = cropped_mask_path_ + '/' + strs[0] + "_crpooed_mask.bmp"; 
+    std::cout << dirt_path << std::endl;
+    std::cout << mask_path << std::endl;
+    cv::imwrite(dirt_path, cropped_dirt_frame_);
+    cv::imwrite(mask_path, cropped_mask_frame_);
   }
 }
 
@@ -76,8 +96,80 @@ void SegmentDirt::segment()
   int morph_size = 2;
   Mat element = cv::getStructuringElement( cv::MORPH_RECT, Size( 2*morph_size + 1, 2*morph_size+1 ));
   cv::morphologyEx( mask_frame_, mask_frame_, cv::MORPH_CLOSE, element );
+}
+
+
+void SegmentDirt::crop()
+{
+  int cols = mask_frame_.cols;
+  int rows = mask_frame_.rows;
   
-  cv::imshow("test", mask_frame_* 255);
-  cv::waitKey(0);
-     
+  int crop_residual = 5;
+  
+  int left_edge = 0;
+  int right_edge = 0;
+  int upper_edge = 0;
+  int down_edge = 0;
+  
+  bool left_edge_flag = 0;
+  bool upper_edge_flag = 0;
+       
+  cv::Mat mask_frame = mask_frame_.clone();       // only convert to 32S, it can be used for check if 0 or 1
+  mask_frame.convertTo(mask_frame, CV_32S);
+  
+  for (int i = 0; i < rows; i++)
+  {
+    for (int j = 0; j < cols; j++)
+    {
+      // -----------------------------------------------------------------------------
+      if (mask_frame.at<int>(i,j) == 1  && left_edge_flag == 0)
+      {
+	left_edge = j;
+	left_edge_flag = 1;
+      }
+      else if (mask_frame.at<int>(i,j) == 1  && left_edge_flag == 1)
+      {
+	if (j > left_edge)
+	  right_edge = j > right_edge ? j : right_edge;
+	else
+	  left_edge = j;
+      }
+      if (mask_frame.at<int>(i,j) == 1  && upper_edge_flag == 0)
+      {
+	upper_edge = i;
+	upper_edge_flag = 1;
+      }
+      else if (mask_frame.at<int>(i,j) == 1  && upper_edge_flag == 1)
+      {
+	if (i > upper_edge)
+	  down_edge = i > down_edge ? i : down_edge;
+	else
+	  upper_edge = i;
+      }
+      // ----------------------------------------------------------------------------
+    }
+  }
+  
+  std::cout << left_edge << ' ' << right_edge << std::endl;
+  std::cout << upper_edge << ' ' << down_edge << std::endl;
+  
+  cv::Mat dirt_frame_pad_array = dirt_frame_.clone();
+  cv::Mat mask_frame_pad_array = mask_frame_.clone();
+  
+  cv::copyMakeBorder(dirt_frame_, dirt_frame_pad_array, crop_residual, crop_residual,
+                     crop_residual, crop_residual, cv::BORDER_REPLICATE);
+  cv::copyMakeBorder(mask_frame_, mask_frame_pad_array, crop_residual, crop_residual,
+                     crop_residual, crop_residual, cv::BORDER_REPLICATE);
+  
+  cv::Rect roi;
+  roi.x =  left_edge;                                          //(left_edge - crop_residual) > 0 ? (left_edge - crop_residual) : 0;
+  roi.y =  upper_edge;                                         //(upper_edge - crop_residual) > 0 ? (upper_edge - crop_residual) : 0;
+  roi.width = abs(right_edge - left_edge) + 2 * crop_residual;
+  roi.height = abs(down_edge - upper_edge) + 2 * crop_residual;
+      
+  cropped_dirt_frame_ = dirt_frame_pad_array(roi);
+  cropped_mask_frame_ = mask_frame_pad_array (roi);
+      
+  cv::imshow("test", cropped_mask_frame_ * 255);
+  cv::waitKey(0);   
 }

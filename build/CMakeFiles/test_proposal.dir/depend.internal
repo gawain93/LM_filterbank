@@ -67,16 +67,20 @@ CMakeFiles/test_proposal.dir/src/image_blend.cpp.o
  /usr/local/include/opencv2/imgproc/imgproc.hpp
  /usr/local/include/opencv2/imgproc/types_c.h
 CMakeFiles/test_proposal.dir/src/segment_dirt.cpp.o
+ ../include/filter_bank.h
  ../include/segment_dirt.h
  /home/rmb-jx/projects/test_proposal/src/segment_dirt.cpp
+ /usr/local/include/opencv2/core.hpp
  /usr/local/include/opencv2/core/core.hpp
  /usr/local/include/opencv2/core/core_c.h
  /usr/local/include/opencv2/core/mat.hpp
  /usr/local/include/opencv2/core/operations.hpp
  /usr/local/include/opencv2/core/types_c.h
  /usr/local/include/opencv2/core/version.hpp
+ /usr/local/include/opencv2/highgui.hpp
  /usr/local/include/opencv2/highgui/highgui.hpp
  /usr/local/include/opencv2/highgui/highgui_c.h
+ /usr/local/include/opencv2/imgproc.hpp
  /usr/local/include/opencv2/imgproc/imgproc.hpp
  /usr/local/include/opencv2/imgproc/types_c.h
 CMakeFiles/test_proposal.dir/src/texture_recog.cpp.o

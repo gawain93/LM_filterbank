@@ -66,16 +66,20 @@ CMakeFiles/test_proposal.dir/src/image_blend.cpp.o: /usr/local/include/opencv2/h
 CMakeFiles/test_proposal.dir/src/image_blend.cpp.o: /usr/local/include/opencv2/imgproc/imgproc.hpp
 CMakeFiles/test_proposal.dir/src/image_blend.cpp.o: /usr/local/include/opencv2/imgproc/types_c.h
 
+CMakeFiles/test_proposal.dir/src/segment_dirt.cpp.o: ../include/filter_bank.h
 CMakeFiles/test_proposal.dir/src/segment_dirt.cpp.o: ../include/segment_dirt.h
 CMakeFiles/test_proposal.dir/src/segment_dirt.cpp.o: ../src/segment_dirt.cpp
+CMakeFiles/test_proposal.dir/src/segment_dirt.cpp.o: /usr/local/include/opencv2/core.hpp
 CMakeFiles/test_proposal.dir/src/segment_dirt.cpp.o: /usr/local/include/opencv2/core/core.hpp
 CMakeFiles/test_proposal.dir/src/segment_dirt.cpp.o: /usr/local/include/opencv2/core/core_c.h
 CMakeFiles/test_proposal.dir/src/segment_dirt.cpp.o: /usr/local/include/opencv2/core/mat.hpp
 CMakeFiles/test_proposal.dir/src/segment_dirt.cpp.o: /usr/local/include/opencv2/core/operations.hpp
 CMakeFiles/test_proposal.dir/src/segment_dirt.cpp.o: /usr/local/include/opencv2/core/types_c.h
 CMakeFiles/test_proposal.dir/src/segment_dirt.cpp.o: /usr/local/include/opencv2/core/version.hpp
+CMakeFiles/test_proposal.dir/src/segment_dirt.cpp.o: /usr/local/include/opencv2/highgui.hpp
 CMakeFiles/test_proposal.dir/src/segment_dirt.cpp.o: /usr/local/include/opencv2/highgui/highgui.hpp
 CMakeFiles/test_proposal.dir/src/segment_dirt.cpp.o: /usr/local/include/opencv2/highgui/highgui_c.h
+CMakeFiles/test_proposal.dir/src/segment_dirt.cpp.o: /usr/local/include/opencv2/imgproc.hpp
 CMakeFiles/test_proposal.dir/src/segment_dirt.cpp.o: /usr/local/include/opencv2/imgproc/imgproc.hpp
 CMakeFiles/test_proposal.dir/src/segment_dirt.cpp.o: /usr/local/include/opencv2/imgproc/types_c.h
 

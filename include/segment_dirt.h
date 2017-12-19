@@ -10,7 +10,9 @@
 
 #include <boost/filesystem.hpp>
 #include <boost/range/iterator_range.hpp>
+#include <boost/algorithm/string.hpp>
 #include <valarray>
+#include "filter_bank.h"
 
 namespace DatasetCreate
 {
@@ -24,6 +26,7 @@ namespace DatasetCreate
     
     void run();
     void segment();
+    void crop();
   private:
     
     std::string dirt_image_path_;
@@ -32,8 +35,9 @@ namespace DatasetCreate
     
     cv::Mat dirt_frame_, cropped_dirt_frame_;
     cv::Mat mask_frame_, cropped_mask_frame_;
-    
+  
   };
 };
+
 
 #endif
